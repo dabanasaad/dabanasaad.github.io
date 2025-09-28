@@ -2,10 +2,10 @@ export const redirects = JSON.parse("{}")
 
 export const routes = Object.fromEntries([
   ["/", { loader: () => import(/* webpackChunkName: "index.html" */"C:/Users/hp/OneDrive/Desktop/my-vuepress-site/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":""} }],
+  ["/about/", { loader: () => import(/* webpackChunkName: "about_index.html" */"C:/Users/hp/OneDrive/Desktop/my-vuepress-site/docs/.vuepress/.temp/pages/about/index.html.js"), meta: {"title":"👋 About Us"} }],
   ["/blog/getting-started.html", { loader: () => import(/* webpackChunkName: "blog_getting-started.html" */"C:/Users/hp/OneDrive/Desktop/my-vuepress-site/docs/.vuepress/.temp/pages/blog/getting-started.html.js"), meta: {"title":"🚀 Getting Started with Modern Web Development"} }],
   ["/blog/", { loader: () => import(/* webpackChunkName: "blog_index.html" */"C:/Users/hp/OneDrive/Desktop/my-vuepress-site/docs/.vuepress/.temp/pages/blog/index.html.js"), meta: {"title":"📝 Blog"} }],
   ["/blog/web-development-tips.html", { loader: () => import(/* webpackChunkName: "blog_web-development-tips.html" */"C:/Users/hp/OneDrive/Desktop/my-vuepress-site/docs/.vuepress/.temp/pages/blog/web-development-tips.html.js"), meta: {"title":"💡 Web Development Tips for Beginners"} }],
-  ["/about/", { loader: () => import(/* webpackChunkName: "about_index.html" */"C:/Users/hp/OneDrive/Desktop/my-vuepress-site/docs/.vuepress/.temp/pages/about/index.html.js"), meta: {"title":"👋 About Us"} }],
   ["/contact/", { loader: () => import(/* webpackChunkName: "contact_index.html" */"C:/Users/hp/OneDrive/Desktop/my-vuepress-site/docs/.vuepress/.temp/pages/contact/index.html.js"), meta: {"title":"📞 Contact Us"} }],
   ["/guide/", { loader: () => import(/* webpackChunkName: "guide_index.html" */"C:/Users/hp/OneDrive/Desktop/my-vuepress-site/docs/.vuepress/.temp/pages/guide/index.html.js"), meta: {"title":"Guide"} }],
   ["/services/consulting.html", { loader: () => import(/* webpackChunkName: "services_consulting.html" */"C:/Users/hp/OneDrive/Desktop/my-vuepress-site/docs/.vuepress/.temp/pages/services/consulting.html.js"), meta: {"title":"💡 Consulting Services"} }],

@@ -1,5 +1,5 @@
 import comp from "C:/Users/hp/OneDrive/Desktop/my-vuepress-site/docs/.vuepress/.temp/pages/services/web-development.html.vue"
-const data = JSON.parse("{\"path\":\"/services/web-development.html\",\"title\":\"💻 Web Development Services\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"services/web-development.md\"}")
+const data = JSON.parse("{\"path\":\"/services/web-development.html\",\"title\":\"💻 Web Development Services\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1759092231000,\"contributors\":[{\"name\":\"Daban asaad\",\"username\":\"\",\"email\":\"dabanasaaddaban@gmail.com\",\"commits\":1}],\"changelog\":[{\"hash\":\"e4cafd9fbf6eefe7b6ef434200f7e7002bed42e5\",\"time\":1759092231000,\"email\":\"dabanasaaddaban@gmail.com\",\"author\":\"Daban asaad\",\"message\":\"Initial commit - VuePress site\"}]},\"filePathRelative\":\"services/web-development.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {
