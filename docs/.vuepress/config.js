@@ -7,7 +7,7 @@ export default defineUserConfig({
   title: "My Awesome Site", 
   description: "A clean and modern website built with VuePress",
 
-  base: "/my-vuepress-site/",
+  base: "/",
 
   head: [
     ["meta", { name: "theme-color", content: "#3eaf7c" }],
