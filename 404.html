@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.24" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <meta name="theme-color" content="#3eaf7c"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><title>My Awesome Site</title><meta name="description" content="A clean and modern website built with VuePress">
+    <link rel="preload" href="/my-vuepress-site/assets/style-CWMRwWVq.css" as="style"><link rel="stylesheet" href="/my-vuepress-site/assets/style-CWMRwWVq.css">
+    <link rel="modulepreload" href="/my-vuepress-site/assets/app-g7-Ax9Gz.js"><link rel="modulepreload" href="/my-vuepress-site/assets/404.html-BgoHnicR.js">
+    <link rel="prefetch" href="/my-vuepress-site/assets/index.html-DlCSxwSr.js" as="script"><link rel="prefetch" href="/my-vuepress-site/assets/index.html-ClPvnwCN.js" as="script"><link rel="prefetch" href="/my-vuepress-site/assets/index.html-B7u3jQKX.js" as="script"><link rel="prefetch" href="/my-vuepress-site/assets/getting-started.html-A5Uti3ll.js" as="script"><link rel="prefetch" href="/my-vuepress-site/assets/web-development-tips.html-eBPv0wkx.js" as="script"><link rel="prefetch" href="/my-vuepress-site/assets/index.html-yRZEUod5.js" as="script"><link rel="prefetch" href="/my-vuepress-site/assets/index.html--9ZR4DZg.js" as="script"><link rel="prefetch" href="/my-vuepress-site/assets/consulting.html-5ZD8UtEH.js" as="script"><link rel="prefetch" href="/my-vuepress-site/assets/design.html-I__MEfWn.js" as="script"><link rel="prefetch" href="/my-vuepress-site/assets/web-development.html-wdWzCeCF.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container" vp-container data-v-33d3430e><main class="page" data-v-33d3430e><div vp-content data-v-33d3430e><h1 data-v-33d3430e>404</h1><blockquote data-v-33d3430e>There&#39;s nothing here.</blockquote><a class="route-link" href="/my-vuepress-site/" data-v-33d3430e>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/my-vuepress-site/assets/app-g7-Ax9Gz.js" defer></script>
+  </body>
+</html>
