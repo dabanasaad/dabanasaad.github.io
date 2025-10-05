@@ -1,0 +1,152 @@
+{
+  "title": "🚀 Getting Started with Modern Web Development",
+  "publishDate": "March 18, 2024",
+  "intro": "Web development has evolved significantly over the years. Here's what you need to know to get started today.",
+
+  "tools": [
+    {
+      "icon": "📝",
+      "name": "Code Editor",
+      "options": "VS Code, Sublime Text, or Atom"
+    },
+    {
+      "icon": "🔄",
+      "name": "Version Control",
+      "options": "Git and GitHub"
+    },
+    {
+      "icon": "🔍",
+      "name": "Browser Dev Tools",
+      "options": "Chrome or Firefox developer tools"
+    },
+    {
+      "icon": "📦",
+      "name": "Package Managers",
+      "options": "npm or yarn"
+    }
+  ],
+
+  "technologies": {
+    "frontend": [
+      {
+        "name": "HTML5 & CSS3",
+        "description": "The foundation of web development"
+      },
+      {
+        "name": "JavaScript (ES6+)",
+        "description": "The programming language of the web"
+      },
+      {
+        "name": "Framework",
+        "description": "Vue.js, React, or Angular"
+      }
+    ],
+    "backend": [
+      {
+        "name": "Server",
+        "description": "Node.js, Python, or PHP"
+      },
+      {
+        "name": "Database",
+        "description": "PostgreSQL, MongoDB, or MySQL"
+      },
+      {
+        "name": "APIs",
+        "description": "REST or GraphQL services"
+      }
+    ]
+  },
+
+  "steps": [
+    {
+      "icon": "📚",
+      "title": "Learn HTML & CSS",
+      "description": "The foundation of web development"
+    },
+    {
+      "icon": "🧠",
+      "title": "Master JavaScript",
+      "description": "The programming language of the web"
+    },
+    {
+      "icon": "🎯",
+      "title": "Choose a Framework",
+      "description": "Vue.js is great for beginners"
+    },
+    {
+      "icon": "🏗️",
+      "title": "Build Projects",
+      "description": "Practice with real projects"
+    },
+    {
+      "icon": "🔧",
+      "title": "Learn Backend",
+      "description": "Server-side development"
+    }
+  ],
+
+  "proTip": "Start with small projects and gradually work your way up to more complex applications.",
+
+  "resources": [
+    {
+      "icon": "📖",
+      "name": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/",
+      "description": "Comprehensive web development documentation"
+    },
+    {
+      "icon": "🎯",
+      "name": "Vue.js Guide",
+      "url": "https://vuejs.org/guide/",
+      "description": "Official Vue.js learning guide"
+    },
+    {
+      "icon": "🆓",
+      "name": "freeCodeCamp",
+      "url": "https://www.freecodecamp.org/",
+      "description": "Free coding bootcamp"
+    }
+  ],
+
+  "projectIdeas": [
+    {
+      "icon": "📄",
+      "name": "Personal Portfolio",
+      "description": "Showcase your skills"
+    },
+    {
+      "icon": "📝",
+      "name": "Todo App",
+      "description": "Learn state management"
+    },
+    {
+      "icon": "🌤️",
+      "name": "Weather App",
+      "description": "Practice API integration"
+    },
+    {
+      "icon": "📰",
+      "name": "Blog",
+      "description": "Content management basics"
+    }
+  ],
+
+  "nextSteps": [
+    {
+      "icon": "🔧",
+      "text": "Learn a backend framework"
+    },
+    {
+      "icon": "☁️",
+      "text": "Deploy your projects online"
+    },
+    {
+      "icon": "🤝",
+      "text": "Contribute to open source"
+    },
+    {
+      "icon": "👥",
+      "text": "Join developer communities"
+    }
+  ]
+}
