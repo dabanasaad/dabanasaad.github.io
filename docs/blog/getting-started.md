@@ -1,67 +1,108 @@
-# 🚀 Getting Started with Modern Web Development
+---
+title: Getting Started
+---
 
-📅 Published: March 15, 2024
+<script setup>
+import { ref, onMounted } from 'vue'
 
-Web development has evolved significantly over the years. Here's what you need to know to get started today.
+const data = ref(null)
 
-## 🛠️ Essential Tools
+onMounted(async () => {
+  const response = await fetch('/data/getting-started.json')
+  data.value = await response.json()
+})
+</script>
 
-📝 Code Editor: VS Code, Sublime Text, or Atom
-🔄 Version Control: Git and GitHub
-🔍 Browser Dev Tools: Chrome or Firefox developer tools
-📦 Package Managers: npm or yarn
-## 🎯 Technologies to Learn
+<div v-if="data">
+  <h1>{{ data.title }}</h1>
+  
+  <p><em>📅 Published: {{ data.publishDate }}</em></p>
+  
+  <p>{{ data.intro }}</p>
 
-### 🎨 Frontend
+  <h2>🛠️ Essential Tools</h2>
+  
+  <ul>
+    <li v-for="tool in data.tools" :key="tool.name">
+      <strong>{{ tool.icon }} {{ tool.name }}</strong>: {{ tool.options }}
+    </li>
+  </ul>
 
-HTML5 & CSS3
-The foundation of web development
-JavaScript (ES6+)
-The programming language of the web
-Framework
-Vue.js, React, or Angular
-### ⚙️ Backend
+  <h2>🎯 Technologies to Learn</h2>
+  
+  <h3>🎨 Frontend</h3>
+  <ul>
+    <li v-for="tech in data.technologies.frontend" :key="tech.name">
+      <strong>{{ tech.name }}</strong> - {{ tech.description }}
+    </li>
+  </ul>
 
-Server: Node.js, Python, or PHP
-Database: PostgreSQL, MongoDB, or MySQL
-APIs: REST or GraphQL services
-## 📋 Getting Started Steps
+  <h3>⚙️ Backend</h3>
+  <ul>
+    <li v-for="tech in data.technologies.backend" :key="tech.name">
+      <strong>{{ tech.name }}</strong> - {{ tech.description }}
+    </li>
+  </ul>
 
-📚 Learn HTML & CSS
-The foundation of web development
-🧠 Master JavaScript
-The programming language of the web
-🎯 Choose a Framework
-Vue.js is great for beginners
-🏗️ Build Projects
-Practice with real projects
-🔧 Learn Backend
-Server-side development
-::: tip 💡 Pro Tip
-Start with small projects and gradually work your way up to more complex applications.
-:::
+  <h2>📋 Getting Started Steps</h2>
+  <ol>
+    <li v-for="step in data.steps" :key="step.title">
+      <strong>{{ step.icon }} {{ step.title }}</strong> - {{ step.description }}
+    </li>
+  </ol>
 
-## 📚 Learning Resources
+  <div class="custom-container tip">
+    <p class="custom-container-title">💡 Pro Tip</p>
+    <p>{{ data.proTip }}</p>
+  </div>
 
-[MDN Web Docs](https://developer.mozilla.org/) - 📖 Comprehensive web development documentation
-[Vue.js Guide](https://vuejs.org/guide/) - 🎯 Official Vue.js learning guide
-[freeCodeCamp](https://www.freecodecamp.org/) - 🆓 Free coding bootcamp
-## 🚀 Your First Project Ideas
+  <h2>📚 Learning Resources</h2>
+  <ul>
+    <li v-for="resource in data.resources" :key="resource.name">
+      <a :href="resource.url" target="_blank">{{ resource.icon }} {{ resource.name }}</a> - {{ resource.description }}
+    </li>
+  </ul>
 
-📄 Personal Portfolio
-Showcase your skills
-📝 Todo App
-Learn state management
-🌤️ Weather App
-Practice API integration
-📰 Blog
-Content management basics
-## 🎯 Next Steps
+  <h2>🚀 Your First Project Ideas</h2>
+  <ol>
+    <li v-for="project in data.projectIdeas" :key="project.name">
+      <strong>{{ project.icon }} {{ project.name }}</strong> - {{ project.description }}
+    </li>
+  </ol>
 
-Once you've mastered the basics:
+  <h2>🎯 Next Steps</h2>
+  <p>Once you've mastered the basics:</p>
+  <ul>
+    <li v-for="step in data.nextSteps" :key="step.text">
+      {{ step.icon }} {{ step.text }}
+    </li>
+  </ul>
 
-🔧 Learn a backend framework
-☁️ Deploy your projects online
-🤝 Contribute to open source
-👥 Join developer communities
-Happy coding! 🚀
+  <p>Happy coding! 🚀</p>
+</div>
+
+<div v-else class="loading">
+  <p>Loading content...</p>
+</div>
+
+<style scoped>
+.custom-container.tip {
+  padding: 0.1rem 1.5rem;
+  border-left-width: 0.5rem;
+  border-left-style: solid;
+  margin: 1rem 0;
+  background-color: #f3f5f7;
+  border-color: #42b983;
+}
+
+.custom-container-title {
+  font-weight: 600;
+  margin-bottom: -0.4rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+}
+</style>
